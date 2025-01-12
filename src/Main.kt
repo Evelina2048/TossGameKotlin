@@ -3,13 +3,13 @@ import java.awt.Color
 import javax.swing.JPanel
 
 val window = JFrame("Toss Game Kotlin")
-val backGround = JPanel();
+val backGround = JPanel()
 
 fun main() {
-    val window = windowSetup();
+    windowSetup()
 
-    makeCharacter1();
-    makeCharacter2();
+    makeCharacter1()
+    makeCharacter2()
 
 
 //    val button = JButton("Click Me!")
@@ -33,7 +33,7 @@ fun windowSetup() : JFrame {
     window.revalidate()
     window.repaint()
 
-    return window;
+    return window
 }
 
 fun makeCharacter1() {
