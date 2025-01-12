@@ -38,22 +38,21 @@ fun windowSetup() : JFrame {
 
 fun makeCharacter1() {
     //
-    val eye1 = Eye()
-    //backGround.add(eye1)
-//    window.add(backGround)
-    window.add(eye1)
-
-    eye1.isVisible = true
-    eye1.setBounds(185,140,100,100)
-    //eye1.setBounds(0,0,300,300)
-
+//    val eye1 = Eye()
 //    window.add(eye1)
+//    eye1.isVisible = true
+//    eye1.setBounds(185,140,100,100)
+    //
+    val mouth1 = Mouth()
+    window.add(mouth1)
+    mouth1.isVisible = true
+    mouth1.setBounds(95,90,100,100)
     //
     val head1 = Head()
     head1.setBounds(100, 100, 100, 100) //x coordinate is for leftmost part of the head1
     head1.isVisible = true
     window.add(head1)
-//
+    //
     val body1 = Body()
     body1.setBounds(head1.x+(head1.width/2),head1.y+head1.height+10,5,440)
     body1.isVisible = true
