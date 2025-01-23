@@ -3,6 +3,9 @@ import java.awt.Color
 import javax.swing.JPanel
 
 class Head : JPanel() {
+    init {
+        isOpaque = false // Make the panel transparent
+    }
     // Override the paintComponent method
     override fun paintComponent(g: Graphics) {
         super.paintComponent(g)

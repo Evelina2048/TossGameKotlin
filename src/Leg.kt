@@ -4,6 +4,9 @@ import java.awt.Graphics2D
 import javax.swing.JPanel
 
 class Leg : JPanel() {
+    init {
+        isOpaque = false // Make the panel transparent
+    }
     override fun paintComponent(g: Graphics) {
             super.paintComponent(g) // Call to clear the panel properly
 
