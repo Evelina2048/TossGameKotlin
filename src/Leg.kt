@@ -3,7 +3,7 @@ import java.awt.Graphics
 import java.awt.Graphics2D
 import javax.swing.JPanel
 
-class Leg : JPanel() {
+class Leg(val degrees: Double) : JPanel() {
     init {
         isOpaque = false // Make the panel transparent
     }
@@ -14,7 +14,7 @@ class Leg : JPanel() {
 
             g2d.color = Color.BLUE
 
-            g2d.rotate(Math.toDegrees(90.0), 80.0, 225.0)
+            g2d.rotate(Math.toDegrees(degrees), 80.0, 225.0)
 
             g2d.fillRect(0,200, 250, 5) //450 // Coordinates adjusted relative to pivot
     }

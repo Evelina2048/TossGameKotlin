@@ -8,9 +8,9 @@ val backGround = JPanel()
 fun main() {
     windowSetup()
 
+    MakeCharacter()
     MakeCharacter().makeCharacter1()
     MakeCharacter().makeCharacter2()
-
 
 
 //    val button = JButton("Click Me!")
