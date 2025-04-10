@@ -8,9 +8,15 @@ val backGround = JPanel()
 fun main() {
     windowSetup()
 
-    MakeCharacter()
-    MakeCharacter().makeCharacter1()
-    MakeCharacter().makeCharacter2()
+    val makeCharacter = MakeCharacter()
+//    makeCharacter.addGrass()
+    makeCharacter.makeCharacter1()
+    makeCharacter.makeCharacter2()
+    makeCharacter.addGrass()
+
+    window.revalidate()
+    window.repaint()
+
 
 
 //    val button = JButton("Click Me!")
@@ -30,6 +36,11 @@ fun windowSetup() : JFrame {
     window.isVisible = true
     window.layout = null
     window.background = Color.orange
+
+//    val screenBackground = ScreenBackground();
+//    screenBackground.setBounds(0,0,window.width,window.width) //body1.x
+//    screenBackground.isVisible = true
+//    window.contentPane.add(screenBackground)
 
     window.revalidate()
     window.repaint()
